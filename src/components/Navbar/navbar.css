@@ -1,4 +1,111 @@
-*{
+.navbar{
     margin: 0;
-    padding: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1px 3px -2px black;
 }
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-logo > img{
+    height: 4.5rem;
+}
+
+
+
+.nav-logo p{
+    color: #171717;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu li:hover{
+    /* color: blue; */
+    transform: scale(1.2);
+}
+
+.nav-menu li::after {
+    content: '';
+    left: 0;
+    width: 100%;
+    background-color: #d86de7;
+    transform: scaleX(0);
+    transition: transform 0.3s ease, height 0.3s ease; 
+}
+.nav-menu li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    height: 6px;
+}
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+}
+
+.nav-login-cart img{
+    height: 4rem;
+}
+
+.nav-login-cart button{
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.nav-login-cart button {
+    border: none;
+    height: 5em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    /* background: #1C1A1C; */
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+  }
+  
+  .text {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+  }
+  
+  .nav-login-cart button:hover {
+    background: linear-gradient(0deg,#e7b1ee,#d86de7);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #d86de7;
+    transform: translateY(-2px);
+  }
+  
+  .nav-login-cart button:hover .text {
+    color: white;
+  }
+  

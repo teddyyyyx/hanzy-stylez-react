@@ -1,16 +1,17 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import './navbar.css'
-import logo from "../Assets/logoImg.png"
+import navLogo from "../Assets/logoImg.png"
+import cart from "../Assets/cartImg.png"
 
 export const Navbar = () => {
   return (
-    <nav> 
+    <nav className='navbar'> 
          <div className='nav-logo'>
-          <img src={logo} alt="" />
+          <img src={navLogo} alt="" />
           <p>Hanzy Stylez</p>
         </div>
-        <ul className='navUl'>
+        <ul className='nav-menu'>
             {/* <Link activeClass="active" to="" smooth={true} duration={500} spy={true}>Home</Link>
             <Link activeClass="active" to="" smooth={true} duration={500} spy={true}>Men</Link>
             <Link activeClass="active" to="" smooth={true} duration={500} spy={true}>Babe</Link>
@@ -19,8 +20,13 @@ export const Navbar = () => {
             <li>Shop</li>
             <li>Men</li>
             <li>Women</li>
-            <li></li>
+            <li>Kids</li>
         </ul>
+
+        <div className='nav-login-cart'>
+          <button>Login</button>
+          <img src={cart} alt="" />
+        </div>
         
     </nav>
   )
