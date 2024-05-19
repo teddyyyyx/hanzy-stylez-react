@@ -1,10 +1,12 @@
-import React from 'react'
-import { Link } from 'react-scroll'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './navbar.css'
 import navLogo from "../Assets/logoImg.png"
 import cart from "../Assets/cartImg.png"
 
 export const Navbar = () => {
+  const [menu, setMenu] = useState("shop");
+
   return (
     <nav className='navbar'> 
          <div className='nav-logo'>
@@ -12,20 +14,15 @@ export const Navbar = () => {
           <p>Hanzy Stylez</p>
         </div>
         <ul className='nav-menu'>
-            {/* <Link activeClass="active" to="" smooth={true} duration={500} spy={true}>Home</Link>
-            <Link activeClass="active" to="" smooth={true} duration={500} spy={true}>Men</Link>
-            <Link activeClass="active" to="" smooth={true} duration={500} spy={true}>Babe</Link>
-            <Link activeClass="active" to="" smooth={true} duration={500} spy={true}>About Us</Link> */}
-     
-            <li>Shop</li>
-            <li>Men</li>
-            <li>Women</li>
-            <li>Kids</li>
+            <li onClick={()=>{setMenu("shop")}}><Link to='/'>Shop</Link>{menu === "shop" ? <hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("mens")}}><Link to='/mens'>Men</Link>{menu === "mens" ? <hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("womens")}}><Link to='/womens'>Women</Link>{menu === "womens" ? <hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("kids")}}><Link to='/kids'>Kids</Link>{menu === "kids" ? <hr/>:<></>}</li>
         </ul>
 
         <div className='nav-login-cart'>
-          <button>Login</button>
-          <img src={cart} alt="" />
+          <Link to='/login'><button>Login</button></Link>
+          <Link to='/cart'><img src={cart} alt="" /></Link>
         </div>
         
     </nav>

@@ -40,25 +40,43 @@
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+.nav-menu li a{
+    text-decoration: none;
+}
+
+.nav-menu hr{
+    border: none;
+    width: 140%;
+    margin-top: 5px;
+    height: 4px;
+    background-color: #e7b1ee;
+}
 
 .nav-menu li:hover{
-    /* color: blue; */
     transform: scale(1.2);
 }
 
+.nav-menu li a:active{
+    color: rgb(207, 173, 213);
+}
+
+
+/* 
 .nav-menu li::after {
     content: '';
     left: 0;
-    width: 100%;
-    background-color: #d86de7;
+    width: 140%;
+    margin-top: 5px;
+    height: 4px;
+    background-color: #e7b1ee;
     transform: scaleX(0);
     transition: transform 0.3s ease, height 0.3s ease; 
 }
 .nav-menu li:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    height: 6px;
-}
+}   */
+
 
 .nav-login-cart{
     display: flex;
