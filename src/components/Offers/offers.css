@@ -1,0 +1,26 @@
+.offers{
+    display: flex;
+    /* width: 75rem; */
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+        background: linear-gradient(180deg, #b6acd2, #dda4e646 98%);
+
+    /* background-color: rgb(202, 116, 246); */
+}
+
+.offers-left h1{
+    font-size: 5rem;
+}
+
+.offers-left p{
+    font-size: 1.3rem;
+}
+
+.offers-left button{
+    padding: 1rem 4rem;
+    border-radius: 40px;
+    margin-top: 1.2rem;
+    cursor: pointer;
+}
+

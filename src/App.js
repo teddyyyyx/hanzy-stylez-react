@@ -1,11 +1,12 @@
 import React from 'react'
 import { Navbar } from './components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ShopCategory } from './components/Pages/ShopCategory';
-import { Product } from './components/Pages/Product';
-import { Cart } from './components/Pages/Cart';
-import { LoginSignup } from './components/Pages/LoginSignup';
-import { Shop } from './components/Pages/Shop';
+import { ShopCategory } from './Pages/ShopCategory';
+import { Product } from './Pages/Product';
+import { Cart } from './Pages/Cart';
+import { LoginSignup } from './Pages/LoginSignup';
+import { Shop } from './Pages/Shop';
+import { Footer } from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
 
                 <Route path='login' element={<LoginSignup />}/>
             </Routes>
+            <Footer />
         </BrowserRouter>
     </div>
 )
