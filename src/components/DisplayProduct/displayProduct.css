@@ -1,0 +1,126 @@
+
+.display-product{
+    display: flex;
+    margin: 3.5rem 8rem;
+}
+
+.display-product-left{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+
+.display-product-right{
+    max-width: 30rem;
+    height: fit-content;
+    position: sticky;
+    top: 0px;
+}
+
+.display-product-left > img{
+    object-fit: contain;
+    width: 30rem;
+}
+
+.display-product-left img:hover{
+    transform: scale(1.02);
+    transition: 0.6s;
+}
+
+.product-price p, .product-available-qty{
+    text-align: start;
+}
+
+.product-price-old{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.product-description{
+    text-align: start;
+}
+
+.product-sizes{
+    margin: 2rem 0;
+}
+
+.sizes-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.sizes-container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+
+.sizes-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.size-guide{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.heart-icon{
+    object-fit: contain;
+    cursor: pointer;
+    width: 2.5rem;
+    padding: 1.2rem;
+}
+.add-to-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.heart-div{
+    height: 5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.product-add-to-bag-btn{
+    height: 5rem;
+    margin: 2rem auto;
+    width: 85%;
+    font-size: 18px;
+
+
+}
+
+.product-star-container{
+    margin: 1rem 0;
+}
+
+.product-price{
+    margin: 1rem 0;
+}
+
+.product-shipping-info, .return-refund{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    gap: 1rem;
+    margin: 1.2rem 0;
+}
+
+
+.product-shipping-container  img{
+    object-fit: contain;
+}
+
