@@ -1,0 +1,11 @@
+:root{
+    --phone-title-font: 2.5rem;
+    --margin-sections: 5rem 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+}
+
