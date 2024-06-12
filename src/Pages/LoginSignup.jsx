@@ -4,17 +4,23 @@ import './CSS/loginSignup.css'
 export const LoginSignup = () => {
   return (
     <div className='login-signup'>
-      <div className='login-signup-container'>
-        <h1>Sign Up</h1>
-        
+      <h1 className='sign-in-text'>Sign in to your account</h1>
+      <p className='sign-in-p'>or sign up for a <a href="#">new account</a></p>
+      <div className='login-signup-container'>        
         <field className='login-signup-field'>
-          <input type="text" placeholder='Username' />
           <input type="email" placeholder='Email' />
           <input type="password" placeholder='Password' />
           <button type='submit'>Continue</button>
         </field>
 
-        <p className='login-signup-login'>Already have an account? <a href="#">Login here</a></p>
+        <div className='ls-container-2'>
+          <div>
+              <input type="checkbox" name="" id="" />
+              <label htmlFor="">Remember me</label>
+          </div>
+
+          <a href="#">Forgot your password?</a>
+        </div>
       </div>      
     </div>
   )

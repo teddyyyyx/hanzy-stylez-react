@@ -1,5 +1,6 @@
 .login-signup{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, #b6acd2, #dda4e646 98%);
@@ -11,23 +12,80 @@
     align-items: center;
     gap: 1rem;
     width: fit-content;
-    background-color: white;
-    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.452);
+    padding: 5rem 3rem;
+    margin: 4rem;
 }
 
 .login-signup-field{
     display: flex;
-    gap: .6rem;
+    gap: 1rem;
     flex-direction: column;
     align-items: center;
 }
 .login-signup-field input{
     padding: 1rem;
     width: 20rem;
+    font-size: 1rem;
 }
 
 .login-signup-container button{
     padding: 1rem 2rem;
     text-align: center;
     width: 100%;
+    font-size: 1.1rem;
+    background-color: #774697;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.login-signup-container button:hover{
+    background-color: #774697d3;
+}
+.login-signup-container button:active{
+    transform: translateY(4px);
+}
+
+.sign-in-text{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+.sign-in-p, .sign-in-p a{
+    color: white;
+    margin-top: .3rem;
+}
+.ls-container-2 a{
+    color: black;
+}
+
+.ls-container-2{
+    display: flex;
+    width: 100%;
+    margin-top: .2rem;
+    justify-content: space-between;
+}
+.ls-container-2 div{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+
+@media screen and (max-width: 500px){
+    .login-signup-container{
+        width: 100%;
+        margin: 3rem;
+    }
+
+
+    .login-signup-field input{
+        width: 70vw;
+        font-size: 1rem;
+    }
+
+    .ls-container-2{
+        justify-content: space-around;
+    }
+
 }

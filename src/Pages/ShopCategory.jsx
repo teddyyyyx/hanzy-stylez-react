@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import './CSS/shopCategory.css'
 import { ShopContext } from '../Context/ShopContext'
-import dropdown_icon from '../components/Assets/dropdown_icon.png'
 import { Item } from '../components/Item/Item'
 
 export const ShopCategory = (props) => {
@@ -14,18 +13,21 @@ export const ShopCategory = (props) => {
 
       <div className='shop-category-index-sort'>
         <p>
-          <span>Showing 1-12</span> out of 36 products
+          <span>Showing 1-12</span> <br className='shop-category-br'/> out of 36 products
         </p>
 
         <div className='shop-category-sort'>
-          Sort by <img src={dropdown_icon}/>
+          Sort by 
+          <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#111111"> <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z" transform="rotate(90 480 -480)"/> </svg>
         </div>
       </div>
 
       <div className='shop-category-products'>
+
+        
         {all_product.map(( item, i ) => {
           if (props.category === item.category){
-            return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
+            return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} category={item.category}/>
           }
           else{
             return null;
@@ -39,5 +41,3 @@ export const ShopCategory = (props) => {
     </div>
   )
 }
-
-// export default ShopCategory
