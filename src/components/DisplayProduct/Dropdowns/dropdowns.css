@@ -12,12 +12,36 @@
     object-fit: contain;
     width: 1.2rem;
     rotate: 90deg;
+    transition: transform 0.3s;
 }
 
+.arrow-icon.rotated {
+    transform: rotate(180deg);
+  }
+
 .dropdown-content {
-    padding: 1rem;
-    background-color: #f8f0f7;
+    padding: 2rem;
+    background-color: #f7f7f7;
     margin-bottom: 1rem;
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
-    /* transition: 500ms ease-in-out; */
+    transition: all 1s;
+    line-height: 1.5rem;
+}
+.dropdown-content p{
+    text-align: start;
+}
+
+.dropdown-content ul{
+    margin: 1rem 0 0 5rem;
+}
+.dropdown hr{
+    /* color: rgb(167, 163, 163); */
+    background-color: rgb(167, 163, 163);
+    height: 2px;
+    border: none;
+}
+
+.dropdown-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px
 }
