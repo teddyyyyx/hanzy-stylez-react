@@ -4,12 +4,14 @@
     align-items: center;
     gap: 10px;
     margin: var(--margin-sections);
+    overflow: hidden;
 }
 
 .popular-title{
     color: #171717;
     font-size: 3rem;
     font-weight: 600;
+    padding: 0 2rem;
 }
 
 .popular hr{
@@ -28,9 +30,6 @@
     object-fit: contain;
     height: fit-content;
     width: 2rem;
-    padding: 1rem;
-    border: 2px solid black;
-    border-radius: 5rem;
     cursor: pointer;
 }
     .arrow-left{
@@ -44,7 +43,7 @@
 .popular-items{
     margin: 5rem;
     display: flex;
-    gap: 30px;
+    gap: .5rem;                 /*Gap for the items*/
     width: 65vw;
     overflow-x: scroll;
     scroll-behavior: smooth; 
@@ -54,8 +53,15 @@
     display: none;
 }
 
-.popular-items  .item-img {
-    width: 20rem;
+.popular-items .item{           /*The Item container. Image is width: 100% -- it will fit relative to the container*/
+    min-width: 20rem;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .arrow-left, .arrow-right{
+        width: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -63,4 +69,14 @@
         font-size: var(--phone-title-font);
         text-align: center;
     }
+
+    .popular-items{
+        margin: 5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 550) {
+    .arrow-left, .arrow-right{
+        width: 1rem;
+}
 }

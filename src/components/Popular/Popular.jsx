@@ -8,11 +8,11 @@ export const Popular = () => {
   const scrollContainerRef = useRef(null);
 
   const scrollLeft = () => {
-    scrollContainerRef.current.scrollLeft -= 1000; // Scroll left button, scrolls the items in the container
+    scrollContainerRef.current.scrollLeft -= 400; // Scroll left button, scrolls the items in the container
   };
 
   const scrollRight = () => {
-    scrollContainerRef.current.scrollLeft += 1000; // Scroll right button, scrolls the items in the container
+    scrollContainerRef.current.scrollLeft += 400; // Scroll right button, scrolls the items in the container
   };
 
   // Mouse wheel function, optional.          onWheel={scrollWheel}
