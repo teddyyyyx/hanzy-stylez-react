@@ -7,7 +7,7 @@ export const Breadcrumb = (props) => {
 
   return (
     <div className='breadcrumb'>
-           <Link to='/'>Shop</Link> / <Link to={`/${product.category}`}> {product.category} </Link>/ {product.name}
+        <Link to='/'>Shop</Link> / <Link to={`/${product.category}`}> {product.category} </Link>/ {product.name}
     </div>
   )
 }

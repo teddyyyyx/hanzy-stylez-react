@@ -1,19 +1,36 @@
 .item {
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+    height: fit-content;
+    width: 18vw;
+    transition: 450ms ease-in-out;
+    animation: fadeIn 700ms forwards;
 }
 
-.item p{
-    margin: 6px 0;
+
+
+
+.item-name{
+    margin: .5rem 0;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: start;
 }
 
 .item-prices{
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-img{
+    width: 100%;
 }
 
 .item-price-new{
     color: #374151;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -25,6 +42,27 @@
 }
 
 .item:hover{
-    transform: scale(1.05);
-    transition: 0.6s;
+    transform: scale(1.02);
+        transition: 0.5s;
+}
+
+
+@media screen and (max-width:748px) {
+    .item{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .item-name{
+        font-size: .9rem;
+    }
+    .item-price-new{
+        font-size: 1rem;
+    }
+
+    .item-price-old{
+        font-size: .8rem;
+    }
+
 }
