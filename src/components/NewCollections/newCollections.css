@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem;
-    text-align: center;
+    justify-content: center;
+    padding: 5rem 0;
 }
-.new-collections h1{
+.new-collections-title{
     margin-bottom: 2rem;
     font-size: 3rem;
+    text-align: center;
 }
 .new-collections hr{
     width: 200px;
@@ -15,10 +16,33 @@
     border-radius: 10px;
     background: #252525;
 }
-.collections{
+.collections-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
-    margin: 3rem 0;
+    gap: .5rem;
+    padding: 3rem 5%;
+}
+
+.collections-container > .item-img{
+    width: 5rem;
+}
+
+@media screen and (max-width: 950px) {
+    .new-collections-title{
+        font-size: var(--phone-title-font);
+    }   
+}
+
+@media screen and (max-width: 850px) {
+    .collections-container{
+        padding: 0;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .new-collections-title{
+        padding: 0 10%;
+    }
 }
