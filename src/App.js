@@ -14,6 +14,7 @@ import latest_banner from './components/Assets/banner-images/banner_latest.png';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import { NewsLetter } from './components/NewsLetter/NewsLetter';
 import { LatestCollection } from './Pages/LatestCollection';
+import './App.css'
 
 const MainContent = () => {
   const location = useLocation();
