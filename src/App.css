@@ -1,0 +1,37 @@
+:root{
+    --phone-title-font: 2.5rem;
+    --margin-sections: 5rem 0;
+    --main-color-theme: #774697;
+    --sub-color-theme: #805d97;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes effect {
+
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes marginAnimation {
+  0% {
+    margin: 2rem 5%;
+  }
+
+  100% {
+    margin: 2rem 2%; 
+  }
+}
+
