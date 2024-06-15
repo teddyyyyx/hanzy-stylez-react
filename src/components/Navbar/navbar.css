@@ -15,11 +15,15 @@
 .nav-logo{
     display: flex;
     align-items: center;
-    color: #171717;
+    color: var(--main-color-theme);
     font-size: 30px;
     font-weight: 600;
     gap: 20px;
 }
+.nav-logo:hover{
+    color: var(--sub-color-theme);
+}
+
 .nav-logo-link{
     text-decoration: none;
 }
@@ -47,11 +51,11 @@
 .nav-menu li:hover{
     transform: scale(1.1);
 }
-
+/* 
     .nav-menu li a:active{
-        color: rgb(207, 173, 213);
+        color: var(--main-color-theme);
         transform: scale(1.2);
-    }
+    } */
 
 .nav-menu .active {
     font-weight: 700;
