@@ -4,6 +4,7 @@
     align-items: center;
     padding: 5rem 10% 0;
     background: linear-gradient(180deg, #b6acd2, #dda4e646 98%);
+    min-height: 85vh;
 }
 
 .intro-p{
