@@ -1,0 +1,15 @@
+#latest-collection{
+    display: flex;
+    flex-direction: column;
+}
+.latest-collection-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+    padding: 3rem 5%;
+}
+
+.latest-banner{
+    width: 100%;
+}
