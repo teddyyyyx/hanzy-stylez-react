@@ -23,7 +23,7 @@ export const Popular = () => {
 
   return (
     <div className='popular'> 
-      <h1 className='popular-title'>POPULAR IN WOMEN</h1>
+      <h1 className='popular-title'>Women Essentials</h1>
       <hr />
 
       <div className='popular-item-container'>
