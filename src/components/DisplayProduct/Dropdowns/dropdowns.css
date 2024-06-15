@@ -10,8 +10,8 @@
 
 .arrow-icon{
     object-fit: contain;
-    width: 1.2rem;
-    rotate: 90deg;
+    width: 2rem;
+    /* rotate: 90deg; */
     transition: transform 0.3s;
 }
 

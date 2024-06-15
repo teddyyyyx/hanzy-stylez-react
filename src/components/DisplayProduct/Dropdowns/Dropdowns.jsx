@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import arrowIcon from '../../Assets/carousell-arrow.png'
 import './dropdowns.css'
 export const Dropdowns = () => {
     const [openDropdowns, setOpenDropdowns] = useState([2]);
@@ -23,7 +22,7 @@ export const Dropdowns = () => {
         <div>
             <div className='dropdown-container' onClick={()=> toggleDropdown(2)}>
                 <div>Shippng & Return</div>
-                <img src={arrowIcon} alt="" className={`arrow-icon ${openDropdowns.includes(2) ? 'rotated' : ''}`}/>
+                <svg className={`arrow-icon ${openDropdowns.includes(2) ? 'rotated' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </div>
 
             {openDropdowns.includes(2) && <div className="dropdown-content">
@@ -55,7 +54,7 @@ export const Dropdowns = () => {
         <div>
             <div className='dropdown-container' onClick={()=> toggleDropdown(1)}>
                 <div>Details</div>
-                <img src={arrowIcon} alt="" className={`arrow-icon ${openDropdowns.includes(1) ? 'rotated' : ''}`}/>
+                <svg className={`arrow-icon ${openDropdowns.includes(1) ? 'rotated' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </div>
 
             {openDropdowns.includes(1) && <div className="dropdown-content">
@@ -78,7 +77,7 @@ export const Dropdowns = () => {
         <div>
             <div className='dropdown-container' onClick={()=> toggleDropdown(3)}>
                 <div>Care</div>
-                <img src={arrowIcon} alt="" className={`arrow-icon ${openDropdowns.includes(3) ? 'rotated' : ''}`}/>
+                <svg className={`arrow-icon ${openDropdowns.includes(3) ? 'rotated' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </div>
             
             {openDropdowns.includes(3) && <div className="dropdown-content">
@@ -104,7 +103,7 @@ export const Dropdowns = () => {
         <div>
             <div className='dropdown-container' onClick={()=> toggleDropdown(4)}>
                 <div>Payment Options</div>
-                <img src={arrowIcon} alt="" className={`arrow-icon ${openDropdowns.includes(4) ? 'rotated' : ''}`}/>
+                <svg className={`arrow-icon ${openDropdowns.includes(4) ? 'rotated' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000000"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </div>
 
             {openDropdowns.includes(4) && <div className="dropdown-content">
