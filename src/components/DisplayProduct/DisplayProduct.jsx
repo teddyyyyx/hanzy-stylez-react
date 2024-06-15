@@ -19,6 +19,7 @@ const [showSpan, setShowSpan] = useState(false);
 
   return (
       <div className='display-product'>
+        
         <div className='display-images-container'>
           <img src={product.image} alt="" />
           <img src={product.image} alt="" />

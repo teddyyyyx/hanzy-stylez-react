@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import arrowIcon from '../../Assets/carousell-arrow.png'
 import './dropdowns.css'
 export const Dropdowns = () => {
-    const [openDropdowns, setOpenDropdowns] = useState([]);
+    const [openDropdowns, setOpenDropdowns] = useState([2]);
 
     const toggleDropdown = (index) => {
 
@@ -20,6 +20,37 @@ export const Dropdowns = () => {
         
 
         {/* {openDropdown === 1 && <div className="dropdown-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>} */}
+        <div>
+            <div className='dropdown-container' onClick={()=> toggleDropdown(2)}>
+                <div>Shippng & Return</div>
+                <img src={arrowIcon} alt="" className={`arrow-icon ${openDropdowns.includes(2) ? 'rotated' : ''}`}/>
+            </div>
+
+            {openDropdowns.includes(2) && <div className="dropdown-content">
+                
+                <div className='dropdown-flex'>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#FFFFF"><path d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z"/></svg>
+                    <p>Free nationwide delivery on all orders above ₱1999!</p>
+                </div>
+   
+                <ul>
+                    <li>Standard delivered 5-9 Business Days</li>
+                    <li>    Express delivered 2-4 Business Days</li>
+                </ul> <br />
+
+
+                <div className='dropdown-flex'>
+                    <svg width="35px" height="35px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M731.25 547.39v72.93H475.06v54.59c0 19.89 4.93 38.51 13.04 55.34h-38.49l-194.73-128c-28.84-18.98-65.64-20.57-96.07-4.18a93.73 93.73 0 0 0-49.29 82.57c0 32.05 16.09 61.54 43.04 78.88l238.79 153.77h339.9v36.57H914.1V547.39H731.25z m-318.4 292.75l-220.7-142.12a20.6 20.6 0 0 1-9.48-17.38c0-11.12 7.59-16.43 10.86-18.2 3.29-1.73 11.88-5.18 21.18 0.91l213.02 140.04h230.7v-73.14h-0.71v-0.04h-54.2c-23.98 0-44.46-15.36-52.11-36.75h179.85v146.68H412.85z m428.11 36.57h-36.57V620.53h36.57v256.18zM232.17 501.66c-20.46-35.7-31.27-76.48-31.27-117.95C200.9 252.64 307.51 146 438.54 146 569.6 146 676.2 252.64 676.2 383.71c0 41.43-10.8 82.21-31.25 117.91l63.46 36.36c26.79-46.77 40.93-100.11 40.93-154.27 0-171.41-139.43-310.86-310.8-310.86S127.76 212.3 127.76 383.71c0 54.2 14.16 107.55 40.95 154.3l63.46-36.35z" fill="#11111" /><path d="M336.22 350.91l-48.78 54.48 136.73 122.47 170.36-195.97-55.22-48-121.64 139.97z" fill="#111111" /></svg>
+                    <p>Get Free returns on all orders. No questions asked!</p>
+                </div>
+                <ul>
+                    <li>Items received within 15 days from the delivered date.</li>
+                    <li>Items received unused, undamaged and in the original package.</li>
+                </ul>
+            </div>} 
+        </div>
+
+        <hr />
 
         <div>
             <div className='dropdown-container' onClick={()=> toggleDropdown(1)}>
@@ -45,12 +76,12 @@ export const Dropdowns = () => {
         <hr />
 
         <div>
-            <div className='dropdown-container' onClick={()=> toggleDropdown(2)}>
+            <div className='dropdown-container' onClick={()=> toggleDropdown(3)}>
                 <div>Care</div>
-                <img src={arrowIcon} alt="" className={`arrow-icon ${openDropdowns.includes(2) ? 'rotated' : ''}`}/>
+                <img src={arrowIcon} alt="" className={`arrow-icon ${openDropdowns.includes(3) ? 'rotated' : ''}`}/>
             </div>
             
-            {openDropdowns.includes(2) && <div className="dropdown-content">
+            {openDropdowns.includes(3) && <div className="dropdown-content">
                 <div className='dropdown-flex'>
                     <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#111111"><path d="M165-480 45-688l264-152h51q16 45 45 82.5t75 37.5q47 0 76-37.5t44-82.5h51l263 153-119 207-75-41v216l-60 51v-369l113 62 59-104-188-110q-26 53-70 84t-94 31q-49 0-93.5-31T316-775L127-665l61 104 112-62v225q-15 2-30.5 6.5T240-380v-141l-75 41Zm22 291-39-46 79-67q23-19 51-29t57-10q29 0 56.5 10t50.5 29l116 99q14 12 31.5 17.5T626-180q18 0 36-5.5t32-17.5l79-69 39 47-79 67q-23 19-50.5 28.5T626-120q-29 0-57-9.5T518-158l-115-99q-14-12-32-17.5t-36-5.5q-19 0-36.5 5.5T267-257l-80 68Zm293-471Z"/></svg>
                     Care for your clothes by washing with like colors in cold water on a gentle cycle, using mild detergents, and avoiding bleach. 
@@ -67,42 +98,6 @@ export const Dropdowns = () => {
                 </ul>
             </div>}
         </div>
-
-
-         <hr />
-
-
-        <div>
-            <div className='dropdown-container' onClick={()=> toggleDropdown(3)}>
-                <div>Shippng & Return</div>
-                <img src={arrowIcon} alt="" className={`arrow-icon ${openDropdowns.includes(3) ? 'rotated' : ''}`}/>
-            </div>
-
-            {openDropdowns.includes(3) && <div className="dropdown-content">
-                
-                <div className='dropdown-flex'>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#FFFFF"><path d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z"/></svg>
-                    <p>Free nationwide delivery on all orders above ₱1999!</p>
-                </div>
-   
-                <ul>
-                    <li>Standard delivered 5-9 Business Days</li>
-                    <li>    Express delivered 2-4 Business Days</li>
-                </ul> <br />
-
-
-                <div className='dropdown-flex'>
-                    <svg width="35px" height="35px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M731.25 547.39v72.93H475.06v54.59c0 19.89 4.93 38.51 13.04 55.34h-38.49l-194.73-128c-28.84-18.98-65.64-20.57-96.07-4.18a93.73 93.73 0 0 0-49.29 82.57c0 32.05 16.09 61.54 43.04 78.88l238.79 153.77h339.9v36.57H914.1V547.39H731.25z m-318.4 292.75l-220.7-142.12a20.6 20.6 0 0 1-9.48-17.38c0-11.12 7.59-16.43 10.86-18.2 3.29-1.73 11.88-5.18 21.18 0.91l213.02 140.04h230.7v-73.14h-0.71v-0.04h-54.2c-23.98 0-44.46-15.36-52.11-36.75h179.85v146.68H412.85z m428.11 36.57h-36.57V620.53h36.57v256.18zM232.17 501.66c-20.46-35.7-31.27-76.48-31.27-117.95C200.9 252.64 307.51 146 438.54 146 569.6 146 676.2 252.64 676.2 383.71c0 41.43-10.8 82.21-31.25 117.91l63.46 36.36c26.79-46.77 40.93-100.11 40.93-154.27 0-171.41-139.43-310.86-310.8-310.86S127.76 212.3 127.76 383.71c0 54.2 14.16 107.55 40.95 154.3l63.46-36.35z" fill="#11111" /><path d="M336.22 350.91l-48.78 54.48 136.73 122.47 170.36-195.97-55.22-48-121.64 139.97z" fill="#111111" /></svg>
-                    <p>Get Free returns on all orders. No questions asked!</p>
-                </div>
-                <ul>
-                    <li>Items received within 15 days from the delivered date.</li>
-                    <li>Items received unused, undamaged and in the original package.</li>
-                </ul>
-            </div>} 
-        </div>
-        
-
 
         <hr />
 
