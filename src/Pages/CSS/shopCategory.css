@@ -1,6 +1,6 @@
 
 .shop-category-banner{
-    width: 100vw;
+    width: 100%;
 }
 
 .shop-category-index-sort{
@@ -45,6 +45,8 @@
     display: none;
 }
 
+
+
 .explore-more-button > button{
     padding: 1rem 2rem;
     border-radius: 2rem;
@@ -63,6 +65,7 @@
 .explore-more-button > button:active{
     transform: translateY(4px);
 }
+
 
 
 @media screen and (max-width: 500px) {
