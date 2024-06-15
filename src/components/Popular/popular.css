@@ -26,19 +26,9 @@
     place-items: center;
 }
 
-.arrow-left, .arrow-right{
-    object-fit: contain;
-    height: fit-content;
-    width: 2rem;
+.arrow-icon{
     cursor: pointer;
 }
-    .arrow-left{
-        rotate: 180deg;
-    } 
-        .arrow-left:active,
-        .arrow-right:active{
-            transform: translateX(4px);
-        }
 
 .popular-items{
     margin: 5rem;
@@ -59,8 +49,8 @@
 
 @media screen and (max-width: 1100px) {
 
-    .arrow-left, .arrow-right{
-        width: 1.2rem;
+    .arrow-icon-svg{
+        width: 2rem;
     }
 }
 
@@ -75,8 +65,9 @@
     }
 }
 
-@media screen and (max-width: 550) {
-    .arrow-left, .arrow-right{
-        width: 1rem;
-}
+@media screen and (max-width: 550px) {
+
+    .arrow-icon-svg{
+        width: 1.5rem;
+    }
 }
