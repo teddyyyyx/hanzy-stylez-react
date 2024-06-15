@@ -27,8 +27,6 @@
     width: 100%;
     min-width: 18rem;
     transition: 500ms ease-in-out;
-    -webkit-user-drag: none;
-    -moz-user-drag: none;
 }
 
 .product-name{
@@ -94,7 +92,7 @@
 
 
 .add-to-cart-button{
-    background-color: #774697;
+    background-color: var(--main-color-theme);
     width: 100%;
     font-size: 1.5rem;
     font-weight: 800;
@@ -118,7 +116,7 @@
 
 
 .add-to-cart-button:hover{
-    background-color: #805d97;
+    background-color: var(--sub-color-theme);
 }
 .add-to-cart-button:active{
     transform: translateY(4px);
@@ -159,7 +157,7 @@
         width: 100%;
         display: flex;
         margin: 0 auto;
-        overflow: hidden;
+        overflow: scroll;
         position: relative;
         top: 0;
     }
