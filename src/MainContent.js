@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Navbar } from './components/Navbar/Navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { ShopCategory } from './Pages/ShopCategory';
 import { Product } from './Pages/Product';
 import { Cart } from './Pages/Cart';
@@ -13,10 +13,9 @@ import kid_banner from './components/Assets/banner-images/banner_kids.png';
 import latest_banner from './components/Assets/banner-images/banner_latest.png';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import { LatestCollection } from './Pages/LatestCollection';
-import './App.css'
 
-const MainContent = () => {
-  // const location = useLocation(); 
+export const MainContent = () => {
+  // const location = useLocation();
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -34,25 +33,13 @@ const MainContent = () => {
         <Route path='/cart' element={<Cart />} />
         <Route path='/login' element={<LoginSignup />} />
 
-        <Route path='/latest' element={<LatestCollection banner={latest_banner}/>} />
+        <Route path='/latest' element={<LatestCollection banner={latest_banner} />} />
       </Routes>
 
 
-        {/*Render the NewsLetter component only if the current URL path is not /login. */}
-        {/* {location.pathname !== '/login' && <NewsLetter />}    */}
-      <Footer />            
+      {/* Render the NewsLetter component only if the current URL path is not /login. */}
+      {/* {location.pathname !== '/login' && <NewsLetter />}    */}
+      <Footer />
     </>
   );
 };
-
-const App = () => {
-  return (
-    <div className='App'>
-      <BrowserRouter>
-        <MainContent />
-      </BrowserRouter>
-    </div>
-  );
-};
-
-export default App;
