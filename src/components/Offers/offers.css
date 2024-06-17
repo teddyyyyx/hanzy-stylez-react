@@ -9,11 +9,14 @@
 }
 
 .offers-left h1{
-    font-size: 5rem;
+    font-size: clamp(3rem, 4vw, 4rem);
+    font-family: "Playwrite AU SA", cursive;
 }
 
 .offers-left p{
-    font-size: 1.3rem;
+    font-size: clamp(.8rem, 1vw, 3rem);
+    font-family: "Playwrite AU SA", cursive;
+
 }
 
 .offers-left button{
@@ -23,7 +26,7 @@
     border-radius: 40px;
     margin-top: 1.2rem;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: clamp(.8rem, 1vw, 3rem);
 }
 
 .offers-img{
@@ -38,12 +41,7 @@
         padding: 0 5%;
     }
 
-    .offers-left h1{
-        font-size: 3.5rem;
-    }
-
     .offers-left p{
-        font-size: 1.1rem;
         text-align: start;
     }
 }
