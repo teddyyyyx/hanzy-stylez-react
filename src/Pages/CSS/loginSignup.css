@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(180deg, #b6acd2, #dda4e646 98%);
-    min-height: calc(100vh - 5.5rem);}
-
+    height: 100vh;
+}
 .login-signup-container{
     display: flex;
     flex-direction: column;
