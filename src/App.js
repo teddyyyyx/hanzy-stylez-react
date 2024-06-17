@@ -40,7 +40,7 @@ const MainContent = () => {
 
 
         {/*Render the NewsLetter component only if the current URL path is not /login. */}
-      {location.pathname !== '/login' && <NewsLetter />}   
+      {/* {location.pathname !== '/login' && <NewsLetter />}    */}
       <Footer />            
     </>
   );
