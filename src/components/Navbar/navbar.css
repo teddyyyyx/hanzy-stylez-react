@@ -16,9 +16,10 @@
     display: flex;
     align-items: center;
     color: var(--main-color-theme);
-    font-size: 30px;
-    font-weight: 600;
+    font-size: clamp(1.5rem, 1.5vw, 3rem);
+    font-weight: 900;
     gap: 20px;
+    font-family: "Playwrite AU SA", cursive;
 }
 .nav-logo:hover{
     color: var(--sub-color-theme);
@@ -133,16 +134,13 @@
         gap: 1.8rem;
         transition: 500ms ease-in-out;  
     }
-    .nav-logo{
-        font-size: 25px;
-    }
 
     .nav-br{
         display: block;
     }
 
     .nav-logo{
-        border: 3px dotted #805d97;
+        border: 2px dotted #805d97;
         padding: .3rem;
         animation: fadeIn 1s ease-in-out;
     }
@@ -159,7 +157,7 @@
         animation: fadeIn 0.5s ease-in-out;
     }
 
-        .nav-menu{
+    .nav-menu{
         display: none;
         position: absolute;
         justify-content: center;
@@ -170,14 +168,11 @@
         backdrop-filter: blur(10px);
         transition: 1000ms ease-in-out;
         z-index: -1;
-        /* height: 10rem; */
-
     }
 
     .nav-menu-visible{
         display: flex;
         transition: 400ms ease-in-out;
-        
     }
 
     .nav-dropdown.open{
@@ -189,13 +184,12 @@
         padding: 1rem 0;
         justify-content: space-around;
     }
-
 }
 
 @media screen and (max-width: 350px) {
- .nav-logo{
+ /* .nav-logo{
     font-size: 15px
- }
+ } */
  .nav-menu{
     top: 4.8rem;
 
