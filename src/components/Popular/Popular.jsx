@@ -14,12 +14,6 @@ export const Popular = () => {
     scrollContainerRef.current.scrollLeft += 400; // Scroll right button, scrolls the items in the container
   };
 
-  // Mouse wheel function, optional.          onWheel={scrollWheel}
-  // const scrollWheel = (evt) => {
-  //   evt.preventDefault(); 
-  //   scrollContainerRef.current.scrollLeft += evt.deltaY;
-  // };
-
   return (
     <div className='popular'> 
       <h1 className='popular-title'>Women Essentials</h1>
@@ -33,7 +27,6 @@ export const Popular = () => {
         </div>
 
         <svg className='arrow-icon-svg' onClick={scrollRight} xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
-        {/* <img src={arrowImg} alt="Right Arrow" className='arrow-right' onClick={scrollRight} /> */}
       </div>
     </div>
   );

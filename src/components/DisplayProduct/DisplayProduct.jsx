@@ -12,11 +12,12 @@ const [showSpan, setShowSpan] = useState(false);
 const scrollContainerRef = useRef(null);
 
 
-  const handleClick = () => {
-    addToCart(product.id)
+
+  const handleClick = () => { 
+    addToCart(product.id)  // adds item.id using addToCart function from ShopContext componen
     setShowSpan(true);
 
-    setTimeout(() => {
+    setTimeout(() => {    // change "Add to Cart" to "Added to Cart!" when button is clicked, hidden span turns visible 
       setShowSpan(false);
     }, 800);
   }

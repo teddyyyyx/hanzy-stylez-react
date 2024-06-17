@@ -4,7 +4,7 @@ import './cartItems.css'
 import { Link } from 'react-router-dom'
 
 export const CartItems = () => {
-  const {all_product, cartItems, getTotalCartAmount, addToCart, minusFromCart, removeAllCart} = useContext(ShopContext);
+  const {all_product, cartItems, getTotalCartAmount, addToCart, minusFromCart, removeAllCart} = useContext(ShopContext); // get functions from ShopContext component using Context API
 
   return (
     <div className='cart'>

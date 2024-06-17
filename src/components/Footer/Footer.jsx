@@ -1,20 +1,10 @@
 import React, {useEffect} from 'react'
 import './footer.css'
 import { NavLink, useLocation } from 'react-router-dom'
-// import { NewsLetter } from '../NewsLetter/NewsLetter'
-
 
 export const Footer = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [pathname]);
-
   return (
-    <div className='footer'>
-      {/* <h1 className='footer-title'>Hanzy Styles</h1> */}
- 
+    <div className='footer'> 
       <div className='footer-ul-container'>
         <div className="footer-menu">
           <h1>Main</h1>

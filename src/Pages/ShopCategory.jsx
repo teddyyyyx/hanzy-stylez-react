@@ -16,17 +16,6 @@ export const ShopCategory = (props) => {
         
         <Pagination itemCount={itemCount}/> 
 
-      {/* <div className='shop-category-index-sort'>
-        <p>
-          <span>Showing 1-12</span> <br className='shop-category-br'/> out of 36 products
-        </p>
-
-        <div className='shop-category-sort'>
-          Sort by 
-          <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#111111"> <path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z" transform="rotate(90 480 -480)"/> </svg>
-        </div>
-      </div> */}
-
       <div className='shop-category-products'>
         {all_product.map(( item, i ) => {
           if (props.category === item.category){

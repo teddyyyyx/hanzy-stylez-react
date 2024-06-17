@@ -8,7 +8,7 @@ export const Navbar = () => {
   const [menu, setMenu] = useState("shop");
   const menuRef = useRef();
   const location = useLocation();
-  const { getTotalCartItems } = useContext(ShopContext);
+  const { getTotalCartItems } = useContext(ShopContext);  // function that computes cart item value
 
   useEffect(() => {
     // Determine the active menu based on the current pathname
@@ -26,6 +26,7 @@ export const Navbar = () => {
     }
   }, [location.pathname]);
 
+// dropdown in smaller viewports
 const dropdown_toggle = (e) => {
   menuRef.current.classList.toggle('nav-menu-visible');
   e.target.classList.toggle('open');
