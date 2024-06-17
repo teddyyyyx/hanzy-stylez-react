@@ -5,7 +5,6 @@
     --sub-color-theme: #805d97;
 }
 
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -25,9 +24,6 @@
     opacity: 1;
   }
 }
-
-
-
 
 @keyframes effect {
 
