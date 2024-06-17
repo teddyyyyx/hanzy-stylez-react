@@ -1,10 +1,7 @@
 .news-letter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: var(--margin-sections);
-    background: linear-gradient(180deg, #b6acd2, #dda4e646 98%);
+    /* border-left: 1px solid var(--main-color-theme);
+    padding-left: 2rem;
+    margin-left: 2rem; */
 }
 
 .news-letter h1{
@@ -23,19 +20,19 @@
     align-items: center;
 }
 .news-letter div > input{
-    height: 4rem;
     border-radius: 2rem;
     border: none;
     font-size: 1rem;
     text-align: center;
+    padding: 1rem 3rem;
     outline: none;
-    width: 15rem;
+    width: fit-content;
 }
 
 .news-letter div > button{
-    height: 4rem;
     background-color: var(--main-color-theme);
-    width: 15rem;
+    width: fit-content;
+    padding: 1rem 3rem;
     color: white;
     text-align: center;
     font-size: 1rem;

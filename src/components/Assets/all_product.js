@@ -190,7 +190,7 @@ let all_product = [
   },
   {
     id: 20,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Men Solid Zippered Full-Zip Slim Fit Bomber Jacket",
     category: "mens",
     image: p20_img,
     new_price: 85.0,

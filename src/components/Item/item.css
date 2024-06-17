@@ -5,7 +5,7 @@
     height: fit-content;
     width: 18vw;
     transition: 450ms ease-in-out;
-    animation: fadeIn 700ms forwards;
+    animation: fadeItems 700ms forwards;
 }
 
 
