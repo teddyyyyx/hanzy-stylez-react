@@ -1,4 +1,4 @@
-import React, {useContext, useRef, useState} from 'react'
+import React, {useContext, useState} from 'react'
 import './displayProduct.css'
 import { Dropdowns } from './Dropdowns/Dropdowns'
 import { ShopContext } from '../../Context/ShopContext'
@@ -8,10 +8,6 @@ export const DisplayProduct = (props) => {
 const {product} = props;
 const {addToCart} = useContext(ShopContext);
 const [showSpan, setShowSpan] = useState(false);
-
-const scrollContainerRef = useRef(null);
-
-
 
   const handleClick = () => { 
     addToCart(product.id)  // adds item.id using addToCart function from ShopContext componen
@@ -31,7 +27,6 @@ const scrollContainerRef = useRef(null);
           <img src={product.image} alt="" />
           <img src={product.image} alt="" />
         </div>
-
 
         <div className='display-product-right'>
             <h1 className='product-name'>{product.name}</h1>
