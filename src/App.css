@@ -5,6 +5,9 @@
     --sub-color-theme: rgb(176, 152, 179);
 }
 
+*{
+  -webkit-tap-highlight-color: transparent;
+}
 
 .title{
   font-size: var(--phone-title-font);
