@@ -3,6 +3,7 @@
     --margin-sections: 5rem 0;
     --main-color-theme: #774697d5;
     --sub-color-theme: rgb(176, 152, 179);
+    --main-hovered-color-theme: #713d94;
 }
 
 *{
