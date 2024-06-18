@@ -40,12 +40,6 @@
     }
 }
 
-@media screen and (max-width: 950px) {
-    .popular-items{
-        margin: 5rem 2rem;
-    }
-}
-
 @media screen and (max-width: 550px) {
 
     .arrow-icon-svg{
