@@ -6,7 +6,7 @@
     background: linear-gradient(180deg, #b6acd2, #dda4e646 98%);
     min-height: 70vh;
     overflow-x: hidden;
-    padding: 5rem 0;
+    padding: 3rem 0;
 
 }
 .login-signup-container{
@@ -17,7 +17,7 @@
     width: fit-content;
     background-color: rgba(255, 255, 255, 0.452);
     padding: 5rem 3rem;
-    margin-top: 1rem;
+    margin-top: .8rem;
 }
 
 .login-signup-field{
@@ -53,10 +53,12 @@
     color: white;
     text-align: center;
     font-size: 3rem;
+    margin: 0 3rem;
 }
 .sign-in-p, .sign-in-p a{
     color: white;
     margin-top: .3rem;
+    text-align: center;
 }
 .ls-container-2 a{
     color: black;
