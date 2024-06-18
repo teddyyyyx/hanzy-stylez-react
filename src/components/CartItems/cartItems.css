@@ -15,8 +15,7 @@
     background-color: rgba(204, 196, 196, 0.151);
     padding: 4rem 2rem;
     height: fit-content;
-    position: sticky;
-    top: 10rem;
+    overflow-x: hidden;
 }
 
 .cart-headers{
@@ -152,6 +151,7 @@
 
 .cart-input input{
     height: 2rem;
+    width: 100%;
     font-size: 1rem;
     text-align: center;
 }
