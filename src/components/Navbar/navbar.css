@@ -13,6 +13,10 @@
     background-color: white;
 }
 
+.navbar > *{
+    animation: fadeIn 1s ease-in-out;
+}
+
 .nav-logo{
     display: flex;
     align-items: center;
@@ -94,11 +98,16 @@
     text-decoration: none;
 }
 
-.login-svg {
+.login-icon {
     width: 2rem;
     fill: var(--main-color-theme);
     display: none;
 }
+
+.login-icon:active, .nav-cart-icon:active{
+    fill: var(--sub-color-theme);
+}
+
 .nav-cart{
     display: flex;
     align-items: center;
@@ -154,10 +163,9 @@
 
     .nav-logo{
         padding: .3rem;
-        animation: fadeIn 1s ease-in-out;
     }
 
-    .login-svg{
+    .login-icon{
         display: block;
     }
 }
@@ -179,7 +187,6 @@
         fill: var(--main-color-theme);
         cursor: pointer;
         transition: transform 0.3s ease-in;
-        animation: fadeIn 0.5s ease-in-out;
         position: absolute;
     }
 
@@ -195,6 +202,7 @@
         transition: 1000ms ease-in-out;
         z-index: -1;
         box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.377);
+        animation: none;
     }
 
     .nav-menu-visible{
@@ -213,7 +221,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .login-svg, .nav-cart-icon{
+    .login-icon, .nav-cart-icon{
         width: 1.8rem;
     }
 }
