@@ -11,6 +11,9 @@
   text-align: center;
   font-weight: 900;
   font-family: "Playwrite AU SA", cursive;
+  border-bottom: 1px dotted var(--main-color-theme);
+  border-bottom-width: 5px;
+  color: var(--main-color-theme);
 }
 
 @keyframes fadeIn {
