@@ -15,9 +15,7 @@ export const Offers = () => {
             </button>
         </div>
     
-        <div>
-            <img src={offersImg} alt="" className='offers-img'/>
-        </div>
+        <img src={offersImg} alt="" className='offers-img'/>
     </div>
 )
 }
