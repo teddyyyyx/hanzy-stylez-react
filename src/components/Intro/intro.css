@@ -43,6 +43,7 @@
     border-radius: 2rem;
     text-decoration: none;
     border: none;
+    margin-bottom: 3rem;
     color: white;
     font-size: clamp(1rem, 1vw, 3 rem);
     font-weight: 500;
