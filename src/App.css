@@ -1,8 +1,16 @@
 :root{
-    --phone-title-font: 2.5rem;
+    --phone-title-font: clamp(35px, 3vw, 50px);
     --margin-sections: 5rem 0;
     --main-color-theme: #774697;
-    --sub-color-theme: #805d97;
+    --sub-color-theme: rgb(176, 152, 179);
+}
+
+
+.title{
+  font-size: var(--phone-title-font);
+  text-align: center;
+  font-weight: 900;
+  font-family: "Playwrite AU SA", cursive;
 }
 
 @keyframes fadeIn {
