@@ -1,5 +1,5 @@
 .navbar{
-    padding: 1.5rem 5%;
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +9,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    height: 7rem;
     background-color: white;
 }
 
@@ -16,7 +17,7 @@
     display: flex;
     align-items: center;
     color: var(--main-color-theme);
-    font-size: clamp(1.5rem, 1.5vw, 3rem);
+    font-size: clamp(1.2rem, 1.5vw, 3rem);
     font-weight: 900;
     gap: 20px;
     font-family: "Playwrite AU SA", cursive;
@@ -47,16 +48,14 @@
 }
 .nav-menu li a{
     text-decoration: none;
+    color: var(--main-color-theme);
+
+    font-size: clamp(.9rem, 2vw, 1.1rem);
 }
 
 .nav-menu li:hover{
     transform: scale(1.1);
 }
-/* 
-    .nav-menu li a:active{
-        color: var(--main-color-theme);
-        transform: scale(1.2);
-    } */
 
 .nav-menu .active {
     font-weight: 700;
@@ -69,7 +68,8 @@
 .nav-login-cart{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
+    justify-content: center;
 }
 
 .nav-login-cart img{
@@ -78,25 +78,39 @@
 
 .nav-login-cart button {
     border: none;
-    padding: 1.5rem 3rem;
+    padding: 1.2rem 2.5rem;
     border-radius: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
     cursor: pointer;
+    color: var(--main-color-theme);
     transition: all 450ms ease-in-out;
 }
 
 .nav-login-cart a{
     text-decoration: none;
 }
+
+.login-svg {
+    width: 2rem;
+    fill: var(--main-color-theme);
+    display: none;
+}
 .nav-cart{
     display: flex;
     align-items: center;
 }
 
+.nav-cart > p{
+    color: var(--main-color-theme);
+}
 
+.nav-cart > svg{
+    fill: var(--main-color-theme);
+
+}
 .text {
     font-weight: 600;
     color: #AAAAAA;
@@ -120,29 +134,30 @@
     transform: translateY(4px);
 }
 
-.nav-dropdown, .nav-br{
+.nav-dropdown{
     display: none;
 }
 
 
 @media screen and (max-width: 970px) {
     .nav-login-cart button {
-        padding: 1rem 1.5rem;
+        display: none;
     }
-
+    .nav-cart{
+        width: 2.5rem;
+    }
     .nav-menu{
         gap: 1.8rem;
         transition: 500ms ease-in-out;  
     }
 
-    .nav-br{
-        display: block;
-    }
-
     .nav-logo{
-        border: 2px dotted #805d97;
         padding: .3rem;
         animation: fadeIn 1s ease-in-out;
+    }
+
+    .login-svg{
+        display: block;
     }
 }
 
@@ -152,22 +167,25 @@
         display: block;
         object-fit: contain;
         width: 2.5rem;
+        fill: var(--main-color-theme);
         cursor: pointer;
         transition: transform 0.3s ease-in;
         animation: fadeIn 0.5s ease-in-out;
+        position: absolute;
     }
 
     .nav-menu{
         display: none;
         position: absolute;
         justify-content: center;
-        top: 6rem;
+        top: 5rem;
         height: 4rem;
         width: 100%;
         background: rgba(255, 255, 255, 0.616);
         backdrop-filter: blur(10px);
         transition: 1000ms ease-in-out;
         z-index: -1;
+        box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.377);
     }
 
     .nav-menu-visible{
@@ -181,17 +199,19 @@
     }
 
     .navbar{
-        padding: 1rem 0;
-        justify-content: space-around;
+        padding: 0 5%;
+        height: 6remsu;
+        justify-content: space-evenly;
+        gap: clamp(1rem, 40vw, 20rem);
+    }
+
+    .nav-login-cart{
+        gap: 1rem;
     }
 }
 
-@media screen and (max-width: 350px) {
- /* .nav-logo{
-    font-size: 15px
- } */
- .nav-menu{
-    top: 4.8rem;
-
- }
+@media screen and (max-width: 500px) {
+    .login-svg, .nav-cart-icon{
+        width: 1.8rem;
+    }
 }
