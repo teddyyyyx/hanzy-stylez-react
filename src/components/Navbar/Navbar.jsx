@@ -29,6 +29,12 @@ export const Navbar = () => {
 const dropdown_toggle = (e) => {
   menuRef.current.classList.toggle('nav-menu-visible');
   e.target.classList.toggle('open');
+
+    // Auto closes the menu dropdown after 1.5 seconds
+    setTimeout(() => {
+      menuRef.current.classList.remove('nav-menu-visible');
+      e.target.classList.remove('open');
+    }, 5000);
 }
 
 
