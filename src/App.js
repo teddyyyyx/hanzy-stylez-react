@@ -48,7 +48,7 @@ const MainContent = () => {
 const App = () => {
   return (
     <div className='App'>
-      <BrowserRouter>
+      <BrowserRouter basename="/hanzy-stylez-react">
         <MainContent />
       </BrowserRouter>
     </div>
