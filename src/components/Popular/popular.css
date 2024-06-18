@@ -34,3 +34,14 @@
     min-width: 20rem;
 }
 
+@media screen and (max-width: 850px) {
+    .popular-items .item{           /*The Item container. Image is width: 100% -- it will fit relative to the container*/
+        min-width: 15rem;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+    .popular-items .item{           /*The Item container. Image is width: 100% -- it will fit relative to the container*/
+        min-width: 12rem;
+    }    
+}
