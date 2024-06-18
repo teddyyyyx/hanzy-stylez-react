@@ -2,16 +2,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5rem 10% 0;
+    height: 85vh;
     background: linear-gradient(180deg, #b6acd2, #dda4e646 98%);
-    height: fit-content;
-    min-height: 85vh;
 }
 
 .intro-p{
     font-size: clamp(1rem, 1vw, 3rem);
     color: white;
     text-align: start;
+    font-family: "Playwrite AU SA", cursive;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.intro-quote{
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    margin: 1rem 0;
+    color: white;
     font-family: "Playwrite AU SA", cursive;
     animation: fadeIn 1.5s ease-in-out;
 }
@@ -25,31 +31,23 @@
     animation: fadeIn 1.5s ease-in-out;
 } 
 
-.intro-quote{
-    font-size: clamp(2.5rem, 3vw, 4rem);
-    margin: 1rem 0;
-    color: white;
-    font-family: "Playwrite AU SA", cursive;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
 .intro-button{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #eeedeb5d;
+    background-color: rgba(202, 115, 223, 0.493);
     width: fit-content;
     padding: 1rem 2rem;
     border-radius: 2rem;
     text-decoration: none;
-    border: 2px solid var(--sub-color-theme);
-    color: rgb(75, 74, 74);
+    border: none;
+    color: white;
     font-size: clamp(1rem, 1vw, 3 rem);
     font-weight: 500;
     animation: scaleInFromLeft 1s ease-in-out;
 }
 .intro-button:hover{
-    background-color: rgb(212, 212, 212);
+    background-color: rgba(202, 115, 223, 0.61);
 }
 
 .honeyImg{
@@ -62,6 +60,11 @@
 .intro-hr-2{
     display: none;
 }
+
+.intro-button >svg {
+    fill: white;
+}
+
 
 @media screen and (max-width: 1300px) {
     .hero-button{
@@ -81,7 +84,7 @@
         align-items: center;
         text-align: center;
         animation: fadeIn 1s ease-in-out;
-
+        margin: 1.5rem;
     }
     .intro-p{
         text-align: center;
@@ -90,12 +93,7 @@
 
     .intro-button{
         margin-top: 3rem;
-
-    }
-    #intro{
-        height: 60vh;
-        padding-top: 0;
-
+        padding: .5rem 1.5rem;
     }
        .intro-hr-2{
         display: block;
@@ -105,6 +103,10 @@
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
         animation: fadeIn 1s ease-in-out;
     }
+/* 
+    .intro-quote{
+        font-size: clamp(1.8rem, 4vw, 4rem);
+    } */
 }
 
 
