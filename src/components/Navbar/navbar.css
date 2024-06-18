@@ -19,6 +19,7 @@
     color: var(--main-color-theme);
     font-size: clamp(1.2rem, 1.5vw, 3rem);
     font-weight: 900;
+    line-height: 1.2rem;
     gap: 20px;
     font-family: "Playwrite AU SA", cursive;
 }
@@ -163,6 +164,14 @@
 
 
 @media screen and (max-width: 620px) {
+    .navbar{
+        padding: 0 5%;
+        height: 5rem;
+        justify-content: space-evenly;
+        gap: clamp(1rem, 40vw, 20rem);
+        box-shadow: none;
+    }
+
     .nav-dropdown{
         display: block;
         object-fit: contain;
@@ -196,13 +205,6 @@
     .nav-dropdown.open{
         transition: 400ms ease-in-out;
         transform: rotate(90deg);
-    }
-
-    .navbar{
-        padding: 0 5%;
-        height: 6remsu;
-        justify-content: space-evenly;
-        gap: clamp(1rem, 40vw, 20rem);
     }
 
     .nav-login-cart{
