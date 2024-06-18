@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hanzy-stylez-react/static/css/main.85fba12a.css",
-    "main.js": "/hanzy-stylez-react/static/js/main.14b26db9.js",
+    "main.css": "/hanzy-stylez-react/static/css/main.8535dad7.css",
+    "main.js": "/hanzy-stylez-react/static/js/main.ec5cce5f.js",
     "static/media/product_9.png": "/hanzy-stylez-react/static/media/product_9.c801212aa3bed83e7572.png",
     "static/media/honeyImg.png": "/hanzy-stylez-react/static/media/honeyImg.fc039fc62713a87827e0.png",
     "static/media/product_8.png": "/hanzy-stylez-react/static/media/product_8.2cf4747c23b5e634072c.png",
@@ -45,11 +45,11 @@
     "static/media/product_35.png": "/hanzy-stylez-react/static/media/product_35.073b8b5de77cfc979821.png",
     "static/media/banner_latest.png": "/hanzy-stylez-react/static/media/banner_latest.a45aa1466e8600a034fe.png",
     "index.html": "/hanzy-stylez-react/index.html",
-    "main.85fba12a.css.map": "/hanzy-stylez-react/static/css/main.85fba12a.css.map",
-    "main.14b26db9.js.map": "/hanzy-stylez-react/static/js/main.14b26db9.js.map"
+    "main.8535dad7.css.map": "/hanzy-stylez-react/static/css/main.8535dad7.css.map",
+    "main.ec5cce5f.js.map": "/hanzy-stylez-react/static/js/main.ec5cce5f.js.map"
   },
   "entrypoints": [
-    "static/css/main.85fba12a.css",
-    "static/js/main.14b26db9.js"
+    "static/css/main.8535dad7.css",
+    "static/js/main.ec5cce5f.js"
   ]
 }
