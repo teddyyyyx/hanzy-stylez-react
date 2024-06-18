@@ -6,7 +6,8 @@ export const Item = (props) => {
   return (
     <div className='item'>
       <Link to={`/${props.category}/product/${props.id}`}>  <img src={props.image} alt="" className='item-img'/>  </Link>
-        <p className='item-name'>{props.name}</p>
+      <Link to={`/${props.category}/product/${props.id}`}>  <p className='item-name'>{props.name}</p>  </Link>
+      {/* <p className='item-name'>{props.name}</p> */}
         <div className='item-prices'>
             <div className='item-price-new'>
                 P{props.new_price}
