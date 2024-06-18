@@ -71,7 +71,7 @@
 
 .news-letter-email-container{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
 }
 .news-letter div > input{
@@ -89,6 +89,7 @@
     width: fit-content;
     padding: 1rem 3rem;
     color: white;
+    border: none;
     text-align: center;
     font-size: 1rem;
     border-radius: 2rem;
