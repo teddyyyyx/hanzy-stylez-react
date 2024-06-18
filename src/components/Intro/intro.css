@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 85vh;
+    height: fit-content;
     background: linear-gradient(180deg, #b6acd2, #dda4e646 98%);
+    /* padding: 5% 0; */
+    min-height: 85vh;
 }
 
 .intro-p{
