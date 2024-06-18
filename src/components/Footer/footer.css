@@ -58,12 +58,12 @@
 }
 
 .news-letter h1{
-    font-size: 3rem ;
+    font-size: clamp(2.2rem, 5vw, 3rem);
     color: white;
     font-family: "Playwrite AU SA", cursive;
 }
 .news-letter p{
-    font-size: 1.2rem;
+    font-size: clamp(.8rem, 3vw, 1.2);
     margin-bottom: 2rem;
     color: white;
     font-family: "Playwrite AU SA", cursive;
