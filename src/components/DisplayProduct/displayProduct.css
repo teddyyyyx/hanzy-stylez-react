@@ -123,6 +123,8 @@
 
 .heart-icon{
     cursor: pointer;
+    width: 3rem;
+    fill: var(--main-color-theme);
     margin: auto 0;
 }
 
