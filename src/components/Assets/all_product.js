@@ -46,7 +46,7 @@ let all_product = [
   },
   {
     id: 2,
-    name: "Pink Modest Ged Shirt",
+    name: "Pink Modest Honey Ged Shirt",
     category: "women",
     image: p2_img,
     new_price: 69.0,
@@ -62,7 +62,7 @@ let all_product = [
   },
   {
     id: 4,
-    name: "Loose Cryst Hem Blouse",
+    name: "Loose Cryst Hem Mari Blouse",
     category: "women",
     image: p4_img,
     new_price: 100.0,
@@ -158,7 +158,7 @@ let all_product = [
   },
   {
     id: 16,
-    name: "Red Solid Bomber Jacket",
+    name: "Red Solid Athletic Bomber Jacket",
     category: "men",
     image: p16_img,
     new_price: 85.0,
@@ -206,7 +206,7 @@ let all_product = [
   },
   {
     id: 22,
-    name: "Pure White Casual Jacket",
+    name: "Pure White Snow Casual Jacket",
     category: "men",
     image: p22_img,
     new_price: 85.0,
@@ -238,7 +238,7 @@ let all_product = [
   },
   {
     id: 26,
-    name: "Skater Black Hoodie",
+    name: "Skater Black Mckey Hoodie",
     category: "kids",
     image: p26_img,
     new_price: 85.0,
@@ -246,7 +246,7 @@ let all_product = [
   },
   {
     id: 27,
-    name: "Nerd Sheesh Sweatshirt",
+    name: "Under Da Water Sheesh Sweatshirt",
     category: "kids",
     image: p27_img,
     new_price: 85.0,
@@ -262,7 +262,7 @@ let all_product = [
   },
   {
     id: 29,
-    name: "Boru Non-Hooded Jacket",
+    name: "Bogart Slick Non-Hooded Jacket",
     category: "kids",
     image: p29_img,
     new_price: 85.0,
@@ -278,7 +278,7 @@ let all_product = [
   },
   {
     id: 31,
-    name: "Denim Nosual Jacket",
+    name: "Denim Jag Erick Nosual Jacket",
     category: "kids",
     image: p31_img,
     new_price: 85.0,
