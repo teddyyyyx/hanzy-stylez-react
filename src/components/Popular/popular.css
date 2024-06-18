@@ -2,23 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     margin: var(--margin-sections);
     overflow: hidden;
-}
-
-.popular-title{
-    color: #171717;
-    font-size: 3rem;
-    font-weight: 600;
-    padding: 0 2rem;
-}
-
-.popular hr{
-    width: 200px;
-    height: 6px;
-    border-radius: 10px;
-    background: #252525;
 }
 
 .popular-item-container{
@@ -26,12 +11,13 @@
     place-items: center;
 }
 
-.arrow-icon{
+.arrow-icon-svg{
     cursor: pointer;
+    fill: var(--main-color-theme);
 }
 
 .popular-items{
-    margin: 5rem;
+    margin: 2rem 2rem;
     display: flex;
     gap: .5rem;                 /*Gap for the items*/
     width: 65vw;
@@ -55,11 +41,6 @@
 }
 
 @media screen and (max-width: 950px) {
-    .popular-title{
-        font-size: var(--phone-title-font);
-        text-align: center;
-    }
-
     .popular-items{
         margin: 5rem 2rem;
     }

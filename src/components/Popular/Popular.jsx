@@ -16,8 +16,7 @@ export const Popular = () => {
 
   return (
     <div className='popular'> 
-      <h1 className='popular-title'>Women Essentials</h1>
-      <hr />
+      <h1 className='title'>Women Essentials</h1>
 
       <div className='popular-item-container'>
       <svg className='arrow-icon-svg' onClick={scrollLeft} xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>        <div className="popular-items" ref={scrollContainerRef}>
