@@ -41,7 +41,7 @@
     padding: 1rem 2rem;
     border-radius: 2rem;
     color: white;
-    background-color: #e7b1ee;
+    background-color: var(--main-color-theme);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,8 +50,7 @@
 }
 
 .explore-more-button > button:hover{
-    background-color: #eab9f0;
-    color: #a347afab;
+    background-color: var(--main-hovered-color-theme);
 }
 .explore-more-button > button:active{
     transform: translateY(4px);
