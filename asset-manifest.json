@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/hanzy-stylez-react/static/css/main.8535dad7.css",
-    "main.js": "/hanzy-stylez-react/static/js/main.ec5cce5f.js",
+    "main.css": "/hanzy-stylez-react/static/css/main.44d3d175.css",
+    "main.js": "/hanzy-stylez-react/static/js/main.60f8ec55.js",
     "static/media/product_9.png": "/hanzy-stylez-react/static/media/product_9.c801212aa3bed83e7572.png",
     "static/media/honeyImg.png": "/hanzy-stylez-react/static/media/honeyImg.fc039fc62713a87827e0.png",
     "static/media/product_8.png": "/hanzy-stylez-react/static/media/product_8.2cf4747c23b5e634072c.png",
-    "static/media/exclusive_image.png": "/hanzy-stylez-react/static/media/exclusive_image.9cfec062eaf3c3bedb39.png",
     "static/media/product_5.png": "/hanzy-stylez-react/static/media/product_5.437deb074cfe97900c5e.png",
     "static/media/product_7.png": "/hanzy-stylez-react/static/media/product_7.004329923d4e6d2e4f9e.png",
     "static/media/banner_mens.png": "/hanzy-stylez-react/static/media/banner_mens.bc593f71490847fa6c14.png",
     "static/media/product_10.png": "/hanzy-stylez-react/static/media/product_10.97116f3af7f5e2000feb.png",
     "static/media/product_11.png": "/hanzy-stylez-react/static/media/product_11.e26400d274dc5b02d79d.png",
     "static/media/product_4.png": "/hanzy-stylez-react/static/media/product_4.ea0420ca9cec08d6df05.png",
+    "static/media/exclusive_image.png": "/hanzy-stylez-react/static/media/exclusive_image.73f0a831506a67dae66d.png",
     "static/media/product_12.png": "/hanzy-stylez-react/static/media/product_12.f0cbe3b14beeee568f3a.png",
     "static/media/product_31.png": "/hanzy-stylez-react/static/media/product_31.58eec6c742988bd7978b.png",
     "static/media/product_30.png": "/hanzy-stylez-react/static/media/product_30.758a2a62ab1e3f4a2024.png",
@@ -45,11 +45,11 @@
     "static/media/product_35.png": "/hanzy-stylez-react/static/media/product_35.073b8b5de77cfc979821.png",
     "static/media/banner_latest.png": "/hanzy-stylez-react/static/media/banner_latest.a45aa1466e8600a034fe.png",
     "index.html": "/hanzy-stylez-react/index.html",
-    "main.8535dad7.css.map": "/hanzy-stylez-react/static/css/main.8535dad7.css.map",
-    "main.ec5cce5f.js.map": "/hanzy-stylez-react/static/js/main.ec5cce5f.js.map"
+    "main.44d3d175.css.map": "/hanzy-stylez-react/static/css/main.44d3d175.css.map",
+    "main.60f8ec55.js.map": "/hanzy-stylez-react/static/js/main.60f8ec55.js.map"
   },
   "entrypoints": [
-    "static/css/main.8535dad7.css",
-    "static/js/main.ec5cce5f.js"
+    "static/css/main.44d3d175.css",
+    "static/js/main.60f8ec55.js"
   ]
 }
