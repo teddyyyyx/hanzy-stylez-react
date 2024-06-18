@@ -23,6 +23,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
     font-weight: 500;
+    color: var(--main-color-theme);
 }
 
 .cart-header-hr{
@@ -30,6 +31,7 @@
     background-color: grey;
     border: none;
     margin: .6rem 0 1rem;
+    background-color: var(--main-color-theme);
 }
 
 .cart-products{
@@ -126,9 +128,13 @@
     justify-content: space-between;
     margin: 1.8rem 0 .5rem;
 }
+.cart-right-container *{
+    color: var(--main-color-theme);
+}
 
 .cart-promocode{
     gap: 1rem;
+    
 }
 
 .cart-input input{
