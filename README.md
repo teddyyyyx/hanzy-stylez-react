@@ -15,7 +15,6 @@ This project was created and structured by Benz Samson Tagle, leveraging my skil
 - **React**: A JavaScript library for building user interfaces.
 - **React Router**: For handling in-app navigation.
 - **Styled-components**: For CSS-in-JS styling.
-- **Axios**: For making HTTP requests to the backend.
 - **Context API**: For state management across the application.
 
 Feel free to clone my repo and use it as reference for your projects!
