@@ -6,7 +6,7 @@
     background: linear-gradient(180deg, #b6acd2, #dda4e646 98%);
     padding: 0 20%;
     overflow: hidden;
-    height: 45rem;
+    height: 40rem;
 }
 
 .offers-left h1{
@@ -55,7 +55,3 @@
     }
 }
 
-@media screen and (max-width: 450px) {
-    .offers-img{
-        }
-}
